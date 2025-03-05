@@ -1,0 +1,278 @@
+body {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Black Background */
+    color: #F0F0F0; /* Off-White Text */
+}
+
+
+header {
+    color: #F0F0F0;/* Dark Gray */
+    padding: 1rem 0;
+    text-align: center;
+    border-bottom: 1px solid #C0C0C0; /* Light Gray */
+}
+
+#projects {
+    padding: 20px;
+    color: #F0F0F0;
+}
+
+
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project {
+    color: #F0F0F0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#experience {
+   
+    padding: 20px;
+}
+
+
+
+.experience-list li {
+   
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "main"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #F0F0F0; /* Off-White */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav ul li a i {
+    margin-right: 8px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    padding: 40px;
+    color: #F0F0F0; /* Dark Gray */
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2, h3 {
+    color: #F0F0F0; /* Off-White */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #FFC0CB; /* Baby Pink */
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #FFC0CB; /* Baby Pink */
+}
+
+h1 i, h2 i {
+    margin-right: 8px;
+    color: #FFC0CB; /* Baby Pink */
+}
+
+strong {
+    font-weight: bold;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 100%;
+    margin-right: 20px;
+}
+
+
+.about-intro {
+    font-size: 1.2em;
+    line-height: 1.6;
+    
+    margin-bottom: 20px;
+}
+
+.about-description {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #E0E0E0; /* Light Gray */
+}
+
+.about-description strong {
+    color: #FFC0CB; /* Baby Pink */
+}
+
+.project {
+    color: #F0F0F0; /* Darker Gray */
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    text-align: left;
+}
+
+.project a {
+    color: #FFC0CB; /* Baby Pink */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-container li {
+    margin: 15px 30px;
+    text-align: center;
+    
+}
+
+.skills-container i {
+    font-size: 3em; /* Adjust size as needed */
+    display: block;
+    margin-bottom: 10px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.skills-container i:hover {
+    transform: scale(1.1);
+    color: #FFC0CB; /* Baby Pink */
+}
+
+footer {
+    background-color: #1F1F1F; /* Dark Gray */
+    color: #F0F0F0; /* Off-White */
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+ul {
+    padding: 0;
+    list-style-position: inside;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.contact-container {
+    text-align: center;
+    color: #F0F0F0; /* Off-White */
+}
+
+.contact-container a {
+    color: #FFC0CB; /* Baby Pink */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-container a:hover {
+    text-decoration: underline;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+
+
+.experience-list li {
+   
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.light-theme header,
+.light-theme .section,
+.light-theme footer {
+    background-color: #f5f5f5;
+    color: #000000;
+}
+
+.light-theme nav ul li a {
+    color: #000000;
+}
+
+.light-theme .project {
+    background-color: #e0e0e0;
+}
+
+.light-theme .experience-list li {
+    background-color: #d3d3d3;
+}

@@ -111,295 +111,531 @@
         </section>
         <link rel="stylesheet" href="style.css">
         <!-- Projects Section -->
-        <section id="projects" class="section">
-            <div class="section-header">
-                <h2><i class="fas fa-code"></i> Projects</h2>
-                <div class="section-divider"></div>
-            </div>
-            <div class="project-filter">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
-                <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
-                <button class="filter-btn" data-filter="visualization">Visualization</button>
-            </div>
-            <div class="project-grid">
-                <!-- Project 1 -->
-                <div class="project" data-category="data-analysis,visualization">
-                    <div class="project-image">
-                        <img src="https://i.ibb.co/7xcD4ndz/Screenshot-2025-04-25-195417.png" alt="Stock Market Analysis">
-                        <div class="project-links">
-                            <a href="https://github.com/poojaa596/Exploratory-Data-Analysis" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                           
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Stock Market Analysis</h3>
-                        <p>Used Python and Jupyter Notebook to analyze stock data and forecast future trends using ARIMA.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Pandas</span>
-                            <span>Matplotlib</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="project" data-category="machine-learning">
-                    <div class="project-image">
-                        <img src="https://i.ibb.co/5xLv8G80/Screenshot-2024-11-25-221104.png" alt="Fraud Detection with ML">
-                        <div class="project-links">
-                            <a href="https://github.com/poojaa596/Fraud_detection" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Fraud Detection with ML</h3>
-                        <p>Implemented ML algorithms to detect financial fraud using Isolation Forest and Local Outlier Factor.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Scikit-learn</span>
-                            <span>Isolation Forest</span>
-                        </div>
-                    </div>
-                </div>
-                <link rel="stylesheet" href="style.css"> 
-                <!-- Project 3 -->
-                <div class="project" data-category="machine-learning">
-                    <div class="project-image">
-                        <img src="https://i.ibb.co/M5cwz0sJ/Screenshot-2025-04-25-195906.png" alt="Movie Rating Prediction">
-                        <div class="project-links">
-                            <a href="https://github.com/poojaa596/CODSOFT-/blob/main/Movie%20Rating%20Prediction" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Movie Rating Prediction</h3>
-                        <p>Developed a machine learning model using IMDb data to predict movie ratings.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Scikit-learn</span>
-                            <span>Pandas</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 4 -->
-                <div class="project" data-category="data-analysis,visualization">
-                    <div class="project-image">
-                        <img src="https://i.ibb.co/JRyNmGcx/Screenshot-2025-04-25-200116.png" alt="Titanic Survival Predictions">
-                        <div class="project-links">
-                            <a href="https://github.com/poojaa596/CODSOFT-/blob/main/Movie%20Rating%20Prediction" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Titanic Survival Predictions</h3>
-                        <p>Explored survival trends by gender, age, class, and fare using stunning visualizations.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Matplotlib</span>
-                            <span>Seaborn</span>
-                        </div>
-                    </div>
-                </div>
-                <link rel="stylesheet" href="style.css">
-                <!-- Project 5 -->
-                <div class="project" data-category="data-analysis">
-                    <div class="project-image">
-                        <img src="https://i.ibb.co/nqk3Dmgq/Screenshot-2025-04-23-123434.png" alt="Sales Prediction">
-                        <div class="project-links">
-                            <a href="https://github.com/poojaa596/CODSOFT-/blob/main/Sales2.ipynb" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Sales Prediction</h3>
-                        <p>Analyzed advertising spend across TV, Radio, and Newspaper to forecast sales effectively.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Linear Regression</span>
-                            <span>Statsmodels</span>
-                        </div>
-                    </div>
+<section id="projects" class="section">
+    <div class="section-header">
+        <h2><i class="fas fa-code"></i> Projects</h2>
+        <div class="section-divider"></div>
+    </div>
+
+    <!-- Filter buttons (keep these inside the section) -->
+    <div class="project-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
+        <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+        <button class="filter-btn" data-filter="visualization">Visualization</button>
+        <!-- NEW: Web category for HTML/CSS/JS projects -->
+        <button class="filter-btn" data-filter="web">Web</button>
+    </div>
+
+    <!-- Projects grid -->
+    <div class="project-grid">
+        <!-- Existing projects (kept as-is or replace with your originals) -->
+        <div class="project" data-category="data-analysis,visualization">
+            <div class="project-image">
+                <a href="https://github.com/poojaa596/Exploratory-Data-Analysis" target="_blank" title="Open Stock Market Analysis (GitHub)">
+                    <img src="https://i.ibb.co/7xcD4ndz/Screenshot-2025-04-25-195417.png" alt="Stock Market Analysis">
+                </a>
+                <div class="project-links">
+                    <a href="https://github.com/poojaa596/Exploratory-Data-Analysis" target="_blank" class="project-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
                 </div>
             </div>
-        </section>
+            <div class="project-content">
+                <h3>Stock Market Analysis</h3>
+                <p>Used Python and Jupyter Notebook to analyze stock data and forecast future trends using ARIMA.</p>
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Matplotlib</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- (other existing projects kept here...) -->
+<!-- Project 2 -->
+<div class="project" data-category="machine-learning">
+  <div class="project-image">
+    <a href="https://github.com/poojaa596/Fraud_detection" target="_blank" title="Open Fraud Detection Repo">
+      <img src="https://i.ibb.co/5xLv8G80/Screenshot-2024-11-25-221104.png" alt="Fraud Detection with ML">
+    </a>
+    <div class="project-links">
+      <a href="https://github.com/poojaa596/Fraud_detection" target="_blank" class="project-link" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+  <div class="project-content">
+    <h3>Fraud Detection with ML</h3>
+    <p>Implemented ML algorithms to detect financial fraud using Isolation Forest and Local Outlier Factor.</p>
+    <div class="project-tech">
+      <span>Python</span>
+      <span>Scikit-learn</span>
+      <span>Isolation Forest</span>
+    </div>
+  </div>
+</div>
+
+<!-- Project 3 -->
+<div class="project" data-category="machine-learning">
+  <div class="project-image">
+    <a href="https://github.com/poojaa596/CODSOFT-/blob/main/Movie%20Rating%20Prediction" target="_blank" title="Open Movie Rating Repo">
+      <img src="https://i.ibb.co/M5cwz0sJ/Screenshot-2025-04-25-195906.png" alt="Movie Rating Prediction">
+    </a>
+    <div class="project-links">
+      <a href="https://github.com/poojaa596/CODSOFT-/blob/main/Movie%20Rating%20Prediction" target="_blank" class="project-link" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+  <div class="project-content">
+    <h3>Movie Rating Prediction</h3>
+    <p>Developed a machine learning model using IMDb data to predict movie ratings.</p>
+    <div class="project-tech">
+      <span>Python</span>
+      <span>Scikit-learn</span>
+      <span>Pandas</span>
+    </div>
+  </div>
+</div>
+
+<!-- Project 4 -->
+<div class="project" data-category="data-analysis,visualization">
+  <div class="project-image">
+    <a href="https://github.com/poojaa596/CODSOFT-/blob/main/Movie%20Rating%20Prediction" target="_blank" title="Open Titanic Project">
+      <img src="https://i.ibb.co/JRyNmGcx/Screenshot-2025-04-25-200116.png" alt="Titanic Survival Predictions">
+    </a>
+    <div class="project-links">
+      <a href="https://github.com/poojaa596/CODSOFT-/blob/main/Movie%20Rating%20Prediction" target="_blank" class="project-link" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+  <div class="project-content">
+    <h3>Titanic Survival Predictions</h3>
+    <p>Explored survival trends by gender, age, class, and fare using stunning visualizations.</p>
+    <div class="project-tech">
+      <span>Python</span>
+      <span>Matplotlib</span>
+      <span>Seaborn</span>
+    </div>
+  </div>
+</div>
+
+<!-- Project 5 -->
+<div class="project" data-category="data-analysis">
+  <div class="project-image">
+    <a href="https://github.com/poojaa596/CODSOFT-/blob/main/Sales2.ipynb" target="_blank" title="Open Sales Notebook">
+      <img src="https://i.ibb.co/nqk3Dmgq/Screenshot-2025-04-23-123434.png" alt="Sales Prediction">
+    </a>
+    <div class="project-links">
+      <a href="https://github.com/poojaa596/CODSOFT-/blob/main/Sales2.ipynb" target="_blank" class="project-link" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+  <div class="project-content">
+    <h3>Sales Prediction</h3>
+    <p>Analyzed advertising spend across TV, Radio, and Newspaper to forecast sales effectively.</p>
+    <div class="project-tech">
+      <span>Python</span>
+      <span>Linear Regression</span>
+      <span>Statsmodels</span>
+    </div>
+  </div>
+</div>
+
+        <!-- NEW: Travel Website (Web category) -->
+        <div class="project" data-category="web">
+            <div class="project-image">
+                <a href="https://poojaa596.github.io/travel-website" target="_blank" title="Open Travel Website (Live)">
+                    <img src="https://via.placeholder.com/600x350.png?text=Travel+Website" alt="Travel Website">
+                </a>
+                <div class="project-links">
+                    <a href="https://poojaa596.github.io/travel-website" target="_blank" class="project-link" title="Live Site">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a href="https://github.com/poojaa596/travel-website" target="_blank" class="project-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="project-content">
+                <h3>Travel Website</h3>
+                <p>A responsive travel website built using HTML, CSS, and JavaScript showcasing destinations and booking UI.</p>
+                <div class="project-tech">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEW: Travel Quote (Web category) -->
+        <div class="project" data-category="web">
+            <div class="project-image">
+                <a href="https://poojaa596.github.io/travel-quote" target="_blank" title="Open Travel Quote (Live)">
+                    <img src="https://via.placeholder.com/600x350.png?text=Travel+Quote+App" alt="Travel Quote">
+                </a>
+                <div class="project-links">
+                    <a href="https://poojaa596.github.io/travel-quote" target="_blank" class="project-link" title="Live Site">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a href="https://github.com/poojaa596/travel-quote" target="_blank" class="project-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="project-content">
+                <h3>Travel Quote</h3>
+                <p>An interactive front-end app that generates travel quotes and sample itineraries using JavaScript logic.</p>
+                <div class="project-tech">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEW: Dashboard (Web category) -->
+        <div class="project" data-category="web">
+            <div class="project-image">
+                <a href="https://poojaa596.github.io/dashboard" target="_blank" title="Open Dashboard (Live)">
+                    <img src="https://via.placeholder.com/600x350.png?text=Dashboard" alt="Dashboard">
+                </a>
+                <div class="project-links">
+                    <a href="https://poojaa596.github.io/dashboard" target="_blank" class="project-link" title="Live Site">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a href="https://github.com/poojaa596/dashboard" target="_blank" class="project-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="project-content">
+                <h3>Dashboard</h3>
+                <p>A front-end dashboard with summary cards and charts built using pure HTML/CSS/JS.</p>
+                <div class="project-tech">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- End Projects Section -->
+
         <link rel="stylesheet" href="style.css">
         <!-- Experience Section -->
-        <section id="experience" class="section">
-            <div class="section-header">
-                <h2><i class="fas fa-briefcase"></i> Experience</h2>
-                <div class="section-divider"></div>
-            </div>
-            <div class="timeline">
-                <!-- Experience Item 1 -->
-                <div class="timeline-item">
-                    <div class="timeline-date">Feb 2025</div>
-                    <div class="timeline-content">
-                        <h3>Data Science Intern</h3>
-                        <h4>BICS Global</h4>
-                        <ul>
-                            <li>Developed predictive models for customer behavior analysis</li>
-                            <li>Implemented data pipelines for real-time analytics</li>
-                            <li>Created interactive dashboards for business insights</li>
-                        </ul>
-                    </div>
-                </div>
-                <link rel="stylesheet" href="style.css">
-                <!-- Experience Item 2 -->
-                <div class="timeline-item">
-                    <div class="timeline-date">Jan 2025 - Feb 2025</div>
-                    <div class="timeline-content">
-                        <h3>Data Science Intern</h3>
-                        <h4>CodSoft</h4>
-                        <ul>
-                            <li>Built machine learning models for classification tasks</li>
-                            <li>Performed exploratory data analysis on large datasets</li>
-                            <li>Optimized model performance through feature engineering</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <!-- Experience Item 3 -->
-                <div class="timeline-item">
-                    <div class="timeline-date">Sep 2024 - Nov 2024</div>
-                    <div class="timeline-content">
-                        <h3>Data Analytics Intern</h3>
-                        <h4>Codtech IT Solutions</h4>
-                        <ul>
-                            <li>Analyzed business data to identify trends and patterns</li>
-                            <li>Created reports and visualizations for stakeholders</li>
-                            <li>Developed SQL queries for data extraction and transformation</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <!-- Experience Item 4 -->
-                <div class="timeline-item">
-                    <div class="timeline-date">Aug 2024</div>
-                    <div class="timeline-content">
-                        <h3>Data Science Intern</h3>
-                        <h4>Prompt Infotech</h4>
-                        <ul>
-                            <li>Assisted in data cleaning and preprocessing</li>
-                            <li>Participated in building recommendation systems</li>
-                            <li>Contributed to data visualization projects</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+       <!-- Experience Section (Timeline with filters, alternate sides) -->
+<section id="experience" class="section">
+  <div class="section-header">
+    <h2><i class="fas fa-briefcase"></i> Experience & Education</h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="container">
+    <!-- Filter buttons -->
+    <div class="experience-controls" style="display:flex; justify-content:center; margin-bottom:18px;">
+      <div class="exp-filters" role="tablist" aria-label="Experience filters">
+        <button class="exp-filter-btn active" data-filter="all" role="tab">All</button>
+        <button class="exp-filter-btn" data-filter="internship" role="tab">Internship</button>
+        <button class="exp-filter-btn" data-filter="education" role="tab">Education</button>
+      </div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="timeline" id="timeline">
+
+      <!-- UTH Software -->
+      <div class="timeline-item" data-type="internship">
+        <div class="timeline-date">Jul 2025 – Aug 2025</div>
+        <div class="timeline-content">
+          <h3>Web Development Intern</h3>
+          <h4>UTH SOFTWARE</h4>
+          <ul>
+            <li>Built responsive front-end pages using HTML, CSS and JavaScript.</li>
+            <li>Collaborated on integration with back-end APIs and fixed UI bugs.</li>
+            <li>Improved accessibility and mobile responsiveness for key pages.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Focuslogic -->
+      <div class="timeline-item" data-type="internship">
+        <div class="timeline-date">Mar 2025 – May 2025</div>
+        <div class="timeline-content">
+          <h3>Web Designing Intern</h3>
+          <h4>FOCUSLOGIC IT SERVICES</h4>
+          <ul>
+            <li>Designed webpages and landing screens following brand guidelines.</li>
+            <li>Prepared assets and optimized images for fast load times.</li>
+            <li>Worked with the team to create consistent UI components.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- BICS Global (from your file) -->
+      <div class="timeline-item" data-type="internship">
+        <div class="timeline-date">Feb 2025</div>
+        <div class="timeline-content">
+          <h3>Data Science Intern</h3>
+          <h4>BICS Global</h4>
+          <ul>
+            <li>Developed predictive models for customer behavior analysis.</li>
+            <li>Implemented data pipelines for real-time analytics.</li>
+            <li>Created interactive dashboards for business insights.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CodSoft (from your file) -->
+      <div class="timeline-item" data-type="internship">
+        <div class="timeline-date">Jan 2025 – Feb 2025</div>
+        <div class="timeline-content">
+          <h3>Data Science Intern</h3>
+          <h4>CodSoft</h4>
+          <ul>
+            <li>Built ML models for classification tasks and EDA on large datasets.</li>
+            <li>Performed feature engineering and model optimization.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Codtech IT Solutions (from your file) -->
+      <div class="timeline-item" data-type="internship">
+        <div class="timeline-date">Sep 2024 – Nov 2024</div>
+        <div class="timeline-content">
+          <h3>Data Analytics Intern</h3>
+          <h4>Codtech IT Solutions</h4>
+          <ul>
+            <li>Analyzed business data to identify trends and patterns.</li>
+            <li>Created reports and visualizations for stakeholders.</li>
+            <li>Developed SQL queries for data extraction and transformation.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Prompt Infotech (from your file) -->
+      <div class="timeline-item" data-type="internship">
+        <div class="timeline-date">Aug 2024</div>
+        <div class="timeline-content">
+          <h3>Data Science Intern</h3>
+          <h4>Prompt Infotech</h4>
+          <ul>
+            <li>Assisted in data cleaning and preprocessing.</li>
+            <li>Participated in building recommendation system prototypes.</li>
+            <li>Contributed to data visualization projects.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Education items -->
+      <div class="timeline-item" data-type="education">
+        <div class="timeline-date">Nov 2022 – Jun 2026</div>
+        <div class="timeline-content">
+          <h3>Kingston Engineering College</h3>
+          <h4>B.Tech (Information Technology)</h4>
+          <ul>
+            <li>CGPA: 8.5</li>
+            <li>Location: Vellore, India</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-type="education">
+        <div class="timeline-date">Jun 2021 – May 2022</div>
+        <div class="timeline-content">
+          <h3>Sai Guruji Higher Secondary School</h3>
+          <h4>Senior Secondary School</h4>
+          <ul>
+            <li>Percentage: 93.2%</li>
+            <li>Location: Vellore, India</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-type="education">
+        <div class="timeline-date">Jun 2019 – Apr 2020</div>
+        <div class="timeline-content">
+          <h3>Sai Guruji Higher Secondary School</h3>
+          <h4>Secondary School</h4>
+          <ul>
+            <li>Percentage: 85.6%</li>
+            <li>Location: Vellore, India</li>
+          </ul>
+        </div>
+      </div>
+
+    </div> <!-- /timeline -->
+  </div>
+</section>
 
         <!-- Skills Section -->
-        <section id="skills" class="section">
-            <div class="section-header">
-                <h2><i class="fas fa-cogs"></i> Skills</h2>
-                <div class="section-divider"></div>
-            </div>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Programming</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item" data-percent="90">
-                            <div class="skill-info">
-                                <i class="fab fa-python"></i>
-                                <span>Python</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-percent="85">
-                            <div class="skill-info">
-                                <i class="fab fa-java"></i>
-                                <span>Java</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Data Analysis</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item" data-percent="85">
-                            <div class="skill-info">
-                                <i class="fas fa-database"></i>
-                                <span>SQL</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-percent="80">
-                            <div class="skill-info">
-                                <i class="fas fa-chart-line"></i>
-                                <span>Pandas</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Web Technologies</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item" data-percent="75">
-                            <div class="skill-info">
-                                <i class="fab fa-html5"></i>
-                                <span>HTML</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-percent="70">
-                            <div class="skill-info">
-                                <i class="fab fa-css3-alt"></i>
-                                <span>CSS</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Data Visualization</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item" data-percent="80">
-                            <div class="skill-info">
-                                <i class="fas fa-chart-bar"></i>
-                                <span>Matplotlib</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-percent="75">
-                            <div class="skill-info">
-                                <i class="fas fa-chart-pie"></i>
-                                <span>Seaborn</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+       <!-- Skills Section (A + E: grouped categories with skill cards) -->
+<section id="skills" class="section">
+  <div class="section-header">
+    <h2><i class="fas fa-tools"></i> Skills</h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="skills-container">
+
+    <!-- Category: Web Development -->
+    <div class="skill-category">
+      <div class="skill-cat-head">
+        <h3>Web Development</h3>
+        <p class="small">Responsive front-end & UI engineering</p>
+      </div>
+      <div class="skill-cards">
+        <article class="skill-card" tabindex="0" data-proficiency="90">
+          <div class="skill-icon"><i class="fab fa-html5" aria-hidden="true"></i></div>
+          <div class="skill-body">
+            <div class="skill-title">HTML5</div>
+            <div class="skill-meta">Semantic markup, accessibility</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:0%"></div></div>
+          </div>
+          <div class="skill-badge">90%</div>
+        </article>
+
+        <article class="skill-card" tabindex="0" data-proficiency="92">
+          <div class="skill-icon"><i class="fab fa-css3-alt" aria-hidden="true"></i></div>
+          <div class="skill-body">
+            <div class="skill-title">CSS3</div>
+            <div class="skill-meta">Layouts, Flexbox, Grid, Animations</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:0%"></div></div>
+          </div>
+          <div class="skill-badge">92%</div>
+        </article>
+
+        <article class="skill-card" tabindex="0" data-proficiency="88">
+          <div class="skill-icon"><i class="fab fa-js-square" aria-hidden="true"></i></div>
+          <div class="skill-body">
+            <div class="skill-title">JavaScript</div>
+            <div class="skill-meta">DOM, ES6+, async, small apps</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:0%"></div></div>
+          </div>
+          <div class="skill-badge">88%</div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Category: Data Analytics -->
+    <div class="skill-category">
+      <div class="skill-cat-head">
+        <h3>Data Analytics</h3>
+        <p class="small">Data cleaning, visualization & reporting</p>
+      </div>
+      <div class="skill-cards">
+        <article class="skill-card" tabindex="0" data-proficiency="92">
+          <div class="skill-icon"><i class="fab fa-python" aria-hidden="true"></i></div>
+          <div class="skill-body">
+            <div class="skill-title">Python</div>
+            <div class="skill-meta">Pandas, NumPy, scripting</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:0%"></div></div>
+          </div>
+          <div class="skill-badge">92%</div>
+        </article>
+
+        <article class="skill-card" tabindex="0" data-proficiency="88">
+          <div class="skill-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+          <div class="skill-body">
+            <div class="skill-title">Data Viz</div>
+            <div class="skill-meta">Matplotlib, Seaborn, Plotting</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:0%"></div></div>
+          </div>
+          <div class="skill-badge">88%</div>
+        </article>
+
+        <article class="skill-card" tabindex="0" data-proficiency="84">
+          <div class="skill-icon"><i class="fas fa-database" aria-hidden="true"></i></div>
+          <div class="skill-body">
+            <div class="skill-title">SQL</div>
+            <div class="skill-meta">Queries, joins, aggregation</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:0%"></div></div>
+          </div>
+          <div class="skill-badge">84%</div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Category: Machine Learning -->
+    <div class="skill-category">
+      <div class="skill-cat-head">
+        <h3>Machine Learning</h3>
+        <p class="small">Models, evaluation & feature engineering</p>
+      </div>
+      <div class="skill-cards">
+        <article class="skill-card" tabindex="0" data-proficiency="82">
+          <div class="skill-icon"><i class="fas fa-robot" aria-hidden="true"></i></div>
+          <div class="skill-body">
+            <div class="skill-title">Scikit-learn</div>
+            <div class="skill-meta">Classification, regression</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:0%"></div></div>
+          </div>
+          <div class="skill-badge">82%</div>
+        </article>
+
+        <article class="skill-card" tabindex="0" data-proficiency="78">
+          <div class="skill-icon"><i class="fas fa-brain" aria-hidden="true"></i></div>
+          <div class="skill-body">
+            <div class="skill-title">Feature Engineering</div>
+            <div class="skill-meta">Encoding, scaling, selection</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:0%"></div></div>
+          </div>
+          <div class="skill-badge">78%</div>
+        </article>
+
+        <article class="skill-card" tabindex="0" data-proficiency="72">
+          <div class="skill-icon"><i class="fas fa-sync-alt" aria-hidden="true"></i></div>
+          <div class="skill-body">
+            <div class="skill-title">Model Evaluation</div>
+            <div class="skill-meta">Cross-validation, metrics</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:0%"></div></div>
+          </div>
+          <div class="skill-badge">72%</div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Category: Tools & Platform -->
+    <div class="skill-category">
+      <div class="skill-cat-head">
+        <h3>Tools & Platform</h3>
+        <p class="small">Development & collaboration tools</p>
+      </div>
+      <div class="skill-cards">
+        <article class="skill-card" tabindex="0" data-proficiency="88">
+          <div class="skill-icon"><i class="fab fa-git-alt" aria-hidden="true"></i></div>
+          <div class="skill-body">
+            <div class="skill-title">Git</div>
+            <div class="skill-meta">Version control & branching</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:0%"></div></div>
+          </div>
+          <div class="skill-badge">88%</div>
+        </article>
+
+        <article class="skill-card" tabindex="0" data-proficiency="82">
+          <div class="skill-icon"><i class="fas fa-file-code" aria-hidden="true"></i></div>
+          <div class="skill-body">
+            <div class="skill-title">VS Code</div>
+            <div class="skill-meta">Extensions, debugging</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:0%"></div></div>
+          </div>
+          <div class="skill-badge">82%</div>
+        </article>
+
+        <article class="skill-card" tabindex="0" data-proficiency="80">
+          <div class="skill-icon"><i class="fas fa-chart-pie" aria-hidden="true"></i></div>
+          <div class="skill-body">
+            <div class="skill-title">Power BI</div>
+            <div class="skill-meta">Dashboards & reporting</div>
+            <div class="skill-bar"><div class="skill-fill" style="width:0%"></div></div>
+          </div>
+          <div class="skill-badge">80%</div>
+        </article>
+      </div>
+    </div>
+
+  </div> <!-- skills-container -->
+</section>
+
 
         <!-- Contact Section -->
         <section id="contact" class="section">
